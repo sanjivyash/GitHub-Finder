@@ -62,7 +62,7 @@ class UI {
       el.className = "card-body";
       el.style.border = "1px solid #e5e5e5";
 
-      el.innerHTML = `<a href="${repo["html_url"]}">${repo["name"]}</a><button class="btn btn-warning btn-sm float-right" style="margin-right: 10px" disabled>Forks: ${repo["forks"]}</button><button class="btn btn-success btn-sm float-right" style="margin-right: 10px" disabled>Watchers: ${repo["watchers"]}</button><button class="btn btn-primary btn-sm float-right" style="margin-right: 10px" disabled>Stars: ${repo["stargazers_count"]}</button>`;
+      el.innerHTML = `<a href="${repo["html_url"]}" target="_blank">${repo["name"]}</a><button class="btn btn-warning btn-sm float-right" style="margin-right: 10px" disabled>Forks: ${repo["forks"]}</button><button class="btn btn-success btn-sm float-right" style="margin-right: 10px" disabled>Watchers: ${repo["watchers"]}</button><button class="btn btn-primary btn-sm float-right" style="margin-right: 10px" disabled>Stars: ${repo["stargazers_count"]}</button>`;
 
       repoDiv.appendChild(el);
     });
